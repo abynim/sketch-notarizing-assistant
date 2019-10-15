@@ -1,0 +1,28 @@
+{
+  "commands" : [
+      {
+          "script" : "script.js",
+          "handler" : "go",
+          "shortcut" : "",
+          "scope": "application",
+          "name" : "Notarizing Assistant",
+          "identifier" : "selectPlugin"
+      }
+  ],
+  "menu": {
+      "title" : "Notarizing Assistant",
+      "isRoot" : true,
+      "items": [
+          "selectPlugin"
+      ]
+  },
+  "identifier" : "com.abynim.Notarize",
+  "version" : "0.1",
+  "icon" : "icon.png",
+  "description" : "Notarize sketch plugins that contain native frameworks or bundles",
+  "author" : "Aby Nimbalkar",
+  "name" : "Notarizing Assistant",
+  "disableCocoaScriptPreprocessor" : true,
+  "homepage" : "https://github.com/abynim/sketch-notarizing-assistant",
+  "appcast" : "https://raw.githubusercontent.com/abynim/sketch-notarizing-assistant/master/.appcast.xml"
+}
