@@ -81,22 +81,22 @@ The plugin performs the following commands behind the scenes:
 	- We locate the executable binary  
 	- Verify if the bundle has been code signed  
 		```bash
-    codesign -dvv “path/to/binary”
-    ```  
+		codesign -dvv “path/to/binary”
+		```  
 	- Code sign the binary if required  
 		```bash
-    codesign -f -s ”Developer ID Application: Gita Kumar” --timestamp --identifier ”com.binary.identifier” ”path/to/binary”
-    ```  
+		codesign -f -s ”Developer ID Application: Gita Kumar” --timestamp --identifier ”com.binary.identifier” ”path/to/binary”
+		```  
 
 3. Archive the plugin bundle  
-  ```bash
-  zip -r ”path/to/zip” ”path/to/bundle.sketchplugin”
-  ```  
+  	```bash
+  	zip -r ”path/to/zip” ”path/to/bundle.sketchplugin”
+  	```  
 
 4. Submit the zip for notarizing  
-  ```bash
-  xcrun altool --notarize-app -f ”path/to/zip” --primary-bundle-id ”plugin.bundle.identifier” -u ”your-apple-id-email@email.com” -p ”your-app-specific-password” --asc-provider ”your-team-id”
-  ```  
+  	```bash
+  	xcrun altool --notarize-app -f ”path/to/zip” --primary-bundle-id ”plugin.bundle.identifier” -u ”your-apple-id-email@email.com” -p ”your-app-specific-password” --asc-provider ”your-team-id”
+  	```  
 
 
 When Apple accepts your plugin bundle for notarizing, we receive a response containing a unique `RequestUUID`. We save this request ID on your computer and use it to check the status of our notarizing request. All requests show up in the **History** tab.
