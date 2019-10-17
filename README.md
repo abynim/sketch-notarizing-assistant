@@ -1,4 +1,4 @@
-# Notarizing Assistant
+# Notarizing Assistant for [Sketch](https://sketch.com)
 A utility plugin for notarizing other plugins that contain frameworks or bundles.
 
 Starting from macOS 10.15 Catalina, Apple requires all frameworks and app bundles to be code signed and notarized. If your Sketch plugin includes a framework or bundle, it needs to be notarized. Without notarizing, your plugins will fail to load and users will see a message saying Apple cannot verify its identify.
