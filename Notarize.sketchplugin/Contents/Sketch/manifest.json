@@ -17,7 +17,7 @@
       ]
   },
   "identifier" : "com.abynim.Notarize",
-  "version" : "0.2",
+  "version" : "0.3",
   "icon" : "icon.png",
   "description" : "Notarize sketch plugins that contain native frameworks or bundles",
   "author" : "Aby Nimbalkar",
